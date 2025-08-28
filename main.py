@@ -1,6 +1,7 @@
 #Among us script!
 import socket
 import threading
+import time
 
 HEADER = 64
 PORT = 5050
@@ -32,6 +33,10 @@ class Player:
     def addTaskToList(self, task):
         self.taskList.append(task)
 
+
+player1 = Player("Jared")
+task1 = Task("Wires", "Kitchen")
+
 def handle_client(conn, addr):
     #This will handle all server-client communication
     print(f"[NEW CONNECTION] {addr} connected")
@@ -46,16 +51,16 @@ def handle_client(conn, addr):
                 connected = False
 
             print(f"[{addr}] {msg}")
-            conn.send("Message Received".encode(FORMAT))
+            # Send Message
+            conn.send(f"Message Received: {msg}".encode(FORMAT))
+            time.sleep(1)
+            # -----------
     conn.close()
 
 def start():
     # Server - Server Side ;)
-    player1 = Player("Jared")
-    task1 = Task("Wires", "Kitchen")
     task1.toString()
     player1.addTaskToList(task1)
-    print("Hello, World!")
 
     # Server - Client Side ;)
     server.listen()
