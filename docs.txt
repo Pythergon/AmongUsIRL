@@ -22,3 +22,5 @@ print(loaded_data)
 print(loaded_data[0]["player_name"])
 
 [{'player_name': 'Jared', 'isDead': False, 'taskList': [{'isDone': False, 'task_name': 'Wires', 'location': 'Kitchen'}, {'isDone': False, 'task_name': 'Medbay Scan', 'location': 'Living Room'}]}, {'player_name': 'Owen', 'isDead': False, 'taskList': [{'isDone': False, 'task_name': 'Swipe Card', 'location': 'Boys Room'}]}]
+
+the client needs to establish its own traits like name, ID, but the server with control what is assignned to it like taskList
