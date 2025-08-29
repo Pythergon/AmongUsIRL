@@ -1,0 +1,24 @@
+Random crud i dont need :0
+
+# player1_json_task_list = [player1.toJSON()]
+# for task in player1.taskList:
+#     player1_json_task_list.append(task.toJSON())
+#
+# with open("data.json", "w") as json_file:
+#     json.dump(player1_json_task_list, json_file, indent=4)
+
+import json
+
+# Open the file in read mode
+with open("data.json", "r") as json_file:
+    # Use json.load() to read the JSON data from the file
+    loaded_data = json.load(json_file)
+
+# The loaded_data variable now holds the Python list
+print(loaded_data)
+
+# You can now access the data like a normal Python list
+# For example, to print the name of the first task:
+print(loaded_data[0]["player_name"])
+
+[{'player_name': 'Jared', 'isDead': False, 'taskList': [{'isDone': False, 'task_name': 'Wires', 'location': 'Kitchen'}, {'isDone': False, 'task_name': 'Medbay Scan', 'location': 'Living Room'}]}, {'player_name': 'Owen', 'isDead': False, 'taskList': [{'isDone': False, 'task_name': 'Swipe Card', 'location': 'Boys Room'}]}]

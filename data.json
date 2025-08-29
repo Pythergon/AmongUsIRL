@@ -1,0 +1,29 @@
+[
+    {
+        "player_name": "Jared",
+        "isDead": false,
+        "taskList": [
+            {
+                "isDone": true,
+                "task_name": "Wires",
+                "location": "Kitchen"
+            },
+            {
+                "isDone": false,
+                "task_name": "Medbay Scan",
+                "location": "Living Room"
+            }
+        ]
+    },
+    {
+        "player_name": "Owen",
+        "isDead": false,
+        "taskList": [
+            {
+                "isDone": false,
+                "task_name": "Swipe Card",
+                "location": "Boys Room"
+            }
+        ]
+    }
+]
