@@ -1,2 +1,1 @@
-# AmongUsIRL
-Just a project im working on to make among us irl!
+# How it [will] work(s)
