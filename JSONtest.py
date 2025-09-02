@@ -11,6 +11,6 @@ data = {
 }
 
 # Open a file in write mode
-with open('data.json', 'w') as f:
+with open('Demos/gamestate.json', 'w') as f:
     # Use json.dump() to write the data with an indent of 4 spaces
     json.dump(data, f, indent=4)

@@ -1,0 +1,30 @@
+{
+    "players": [],
+    "tasks": [
+        {
+            "isDone": false,
+            "task_name": "Wires",
+            "location": "Kitchen"
+        },
+        {
+            "isDone": false,
+            "task_name": "Medbay Scan",
+            "location": "Living Room"
+        },
+        {
+            "isDone": false,
+            "task_name": "Swipe Card",
+            "location": "Boys Room"
+        },
+        {
+            "isDone": false,
+            "task_name": "Prime Sheilds",
+            "location": "Front Room"
+        },
+        {
+            "isDone": false,
+            "task_name": "Clear Astroids",
+            "location": "Mudroom"
+        }
+    ]
+}
